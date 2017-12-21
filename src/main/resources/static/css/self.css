@@ -1,19 +1,55 @@
  .index-title{
      display: block;
-     font-size: 30px;
-     font-weight: 700;
+     font-size: 1.5555555556em;
+     font-weight: 500;
      padding-left: 0;
      color: #fff;
  }
 
  #fh5co-header.navbar-fixed-top .index-title{
      display: block;
-     font-size: 30px;
-     font-weight: 700;
-     padding-left: 0;
      color: #52d3aa;
  }
 
  .title-div{
+     background-color: #004376;
+ }
 
+
+ .logo-pic{
+     width:145px;
+     height:145px;
+ }
+
+#navbar{
+   text-align: center;
+
+}
+/*转化为块级元素*/
+#navbar ul{
+    display: inline-block;
+}
+ .sr-only-element{overflow:hidden;white-space:nowrap;padding:0}
+ .sr-only-element{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(100%);clip-path:inset(100%);height:1px;position:absolute;width:1px}
+ .unhide.sr-only-element{clip:auto;-webkit-clip-path:none;clip-path:none;height:auto;overflow:visible;position:static;white-space:inherit;width:auto}
+.explore{
+    bottom: 2em;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+ #main.fixed, main.fixed {
+     -webkit-box-ordinal-group: 2;
+     -ms-flex-order: 1;
+     order: 1;
+     margin-top: 93px;
+     position: fixed;
+     overflow: hidden;
+     top: 0;
+     z-index: -1;
+     width: 100%;
+     background-color: #fff;
+     -webkit-box-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
  }

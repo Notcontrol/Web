@@ -41,7 +41,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<!--<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>-->
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -53,6 +53,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
+
 
 		<link rel="stylesheet" href="css/self.css">
 	<!-- 
@@ -192,12 +193,16 @@
 	<body>
 	<header role="banner" id="fh5co-header">
 
-		<div class="title-div">
+		<div class="title-div ">
 			<div class="container">
-				<div class="row">
+				<div class="row" style="text-align: center">
 					<div class="col-xs-6">
 						<span class="index-title" style="float: left;">State Key Laboratory of Cotton Biology</span>
 					</div>
+                    <!--<div class="col-xs-2" >-->
+
+                            <!--<img src="images/henu.png" class="logo-pic"  alt="">-->
+                    <!--</div>-->
 					<div class="col-xs-6">
 						<span class="index-title" style="float: right;">Key Laboratory of Plant Stress Biology</span>
 					</div>
@@ -208,19 +213,21 @@
 		<div class="container">
 			<!-- <div class="row"> -->
 			<nav class="navbar navbar-default">
-				<div class="navbar-header">
-					<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-					 <a class="navbar-brand" href="index.html">Biology</a>
-				</div>
+				<!--<div class="navbar-header">-->
+					<!--&lt;!&ndash; Mobile Toggle Menu Button &ndash;&gt;-->
+					<!--<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>-->
+					 <!--&lt;!&ndash;<a class="navbar-brand" href="index.html">Biology</a>&ndash;&gt;-->
+				<!--</div>-->
 				<div id="navbar" class="navbar-collapse collapse">
-				  <ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-					<li><a href="#" data-nav-section="work"><span>Work</span></a></li>
-					<li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
-					<li><a href="#" data-nav-section="services"><span>Services</span></a></li>
-					<li><a href="#" data-nav-section="about"><span>About</span></a></li>
-					<li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="#" data-nav-section="Index"><span>Index</span></a></li>
+					<li><a href="#" data-nav-section="Introduction"><span>Introduction</span></a></li>
+					<li><a href="#" data-nav-section="News"><span>News</span></a></li>
+					<li><a href="#" data-nav-section="Research"><span>Research</span></a></li>
+					<li><a href="#" data-nav-section="Technical Platform"><span>Technical Platform</span></a></li>
+					<li><a href="#" data-nav-section="Communication"><span>Communication</span></a></li>
+                      <li><a href="#" data-nav-section="Academic Activities"><span>Academic Activities</span></a></li>
+                      <li><a href="#" data-nav-section="中文"><span>中文</span></a></li>
 				  </ul>
 				</div>
 			</nav>
@@ -228,70 +235,80 @@
 	  </div>
 	</header>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/bodybg.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<h1 class="to-animate">Do something you love.</h1>
-							<h2 class="to-animate">Another free HTML5 bootstrap template by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates">FREEHTML5.co</a> released under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons 3.0</a></h2>
+							<h1 class="to-animate" id="splash--wordmark">Henu</h1>
+							<h2 class="to-animate">Double First-Class disciplines & key state laboratories</h2>
 						</div>
 					</div>
+
+
+                    <div class="row explore">
+                        <a href="#main-content" id="explore" style="text-decoration: none" data-ga-action="Splash screen scroller">
+                        <p id="splash--scroller" style="margin-bottom: 0;">Explore Laboratories</p>
+                        <span><i class="icon-arrow-down2"></i></span>
+                        </a>
+                    </div>
 				</div>
 			</div>
 		</div>
-		<div class="slant"></div>
 	</section>
 
-	<section id="fh5co-intro">
-		<div class="container">
-			<div class="row row-bottom-padded-lg">
-				<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-bulb"></i>
-						<h2>Plan</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Get In Touch</a></p>
-					</div>
-				</div>
-				<div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-wrench"></i>
-						<h2>Develop</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Click Me</a></p>
-					</div>
-				</div>
-				<div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">
-					<div class="overlay-darker"></div>
-					<div class="overlay"></div>
-					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-rocket"></i>
-						<h2>Launch</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Why Us?</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="row watch-video text-center to-animate">
-				<span>Watch the video</span>
+	<!--<section id="fh5co-intro">-->
+		<!--<div class="container">-->
+			<!--<div class="row row-bottom-padded-lg">-->
+                <!---->
+				<!--<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">-->
+					<!--<div class="overlay-darker"></div>-->
+					<!--<div class="overlay"></div>-->
+					<!--<div class="fh5co-text">-->
+						<!--<i class="fh5co-intro-icon icon-bulb"></i>-->
+						<!--<h2>Plan</h2>-->
+						<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+						<!--<p><a href="#" class="btn btn-primary">Get In Touch</a></p>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">-->
+					<!--<div class="overlay-darker"></div>-->
+					<!--<div class="overlay"></div>-->
+					<!--<div class="fh5co-text">-->
+						<!--<i class="fh5co-intro-icon icon-wrench"></i>-->
+						<!--<h2>Develop</h2>-->
+						<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+						<!--<p><a href="#" class="btn btn-primary">Click Me</a></p>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">-->
+					<!--<div class="overlay-darker"></div>-->
+					<!--<div class="overlay"></div>-->
+					<!--<div class="fh5co-text">-->
+						<!--<i class="fh5co-intro-icon icon-rocket"></i>-->
+						<!--<h2>Launch</h2>-->
+						<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+						<!--<p><a href="#" class="btn btn-primary">Why Us?</a></p>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--&lt;!&ndash;<div class="row watch-video text-center to-animate">&ndash;&gt;-->
+				<!--&lt;!&ndash;<span>Watch the video</span>&ndash;&gt;-->
 
-				<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
-			</div>
-		</div>
-	</section>
+				<!--&lt;!&ndash;<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>&ndash;&gt;-->
+			<!--&lt;!&ndash;</div>&ndash;&gt;-->
+		<!--</div>-->
+	<!--</section>-->
+    <main id="main" role="main"  tabindex="-1">
+        <h2 id="main-content" class="sr-only-element">Main Content</h2>
 
 	<section id="fh5co-work" data-section="work">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Work</h2>
+					<h2 class="to-animate">Research Group</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
@@ -301,21 +318,21 @@
 			</div>
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work_1.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="images/work_1.jpg" alt="Image" class="img-responsive">
+					<a href="images/songchunpeng.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/songchunpeng.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>Project 1</h2>
-						<span>Branding</span>
+						<h2>Group of Song Chunpeng</h2>
+						<span>Plant molecular and functional genomics and plant cell inheritance</span>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="images/work_2.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work_2.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>Project 2</h2>
-						<span>Web</span>
-						</div>
+                        <div class="fh5co-text">
+                            <h2>Group of Song Chunpeng</h2>
+                            <span>Plant molecular and functional genomics and plant cell inheritance</span>
+                        </div>
 					</a>
 				</div>
 
@@ -324,10 +341,10 @@
 				<div class="col-md-4 col-sm-6 col-xxs-12">
 					<a href="images/work_3.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work_3.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>Project 3</h2>
-						<span>Web</span>
-						</div>
+                        <div class="fh5co-text">
+                            <h2>Group of Song Chunpeng</h2>
+                            <span>Plant molecular and functional genomics and plant cell inheritance</span>
+                        </div>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 col-xxs-12">
@@ -676,7 +693,7 @@
 			</div>
 		</div>
 	</footer>
-	
+    </main>
 	
 	<!--&lt;!&ndash; For demo purposes Only ( You may delete this anytime :-) &ndash;&gt;-->
 	<!--<div id="colour-variations">-->
@@ -711,7 +728,7 @@
 					<!--<span style="background: #f2f2f2;"></span>-->
 				<!--</a>-->
 			<!--</li>-->
-			<!---->
+
 		<!--</ul>-->
 	<!--</div>-->
 	<!--&lt;!&ndash; End demo purposes only &ndash;&gt;-->
@@ -733,8 +750,8 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>-->
+	<!--<script src="js/google_map.js"></script>-->
 
 	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 	<script src="js/jquery.style.switcher.js"></script>
@@ -758,6 +775,10 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
+    <script>
+        $('#explore').click(function(){$('html,body').animate({scrollTop:$('#explore').offset().top}, 400);});
+    </script>
+    <!-- stanford -->
 	</body>
 </html>
 
