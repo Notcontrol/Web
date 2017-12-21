@@ -1,0 +1,19 @@
+ .index-title{
+     display: block;
+     font-size: 30px;
+     font-weight: 700;
+     padding-left: 0;
+     color: #fff;
+ }
+
+ #fh5co-header.navbar-fixed-top .index-title{
+     display: block;
+     font-size: 30px;
+     font-weight: 700;
+     padding-left: 0;
+     color: #52d3aa;
+ }
+
+ .title-div{
+
+ }
