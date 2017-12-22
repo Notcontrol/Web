@@ -62,10 +62,11 @@
      flex: 1;
  }
 .content{
-    margin-top:60px;height: 2400px;z-index:-1;
+    margin-top:60px;height: 4000px;z-index:1;
+    width:100%;
 }
  .content_fix{position: fixed;top:50px;margin-top:0;}
-
+ .content_shadow{height: 1000px;}
  #bg-img{
      position: absolute;
      margin: auto;
