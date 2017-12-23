@@ -6,9 +6,22 @@
      color: #fff;
  }
 
+ @media screen and (max-width: 768px) {
+     .index-title{
+         display: block;
+         font-size: 0.5em;
+         font-weight: 300;
+         padding-left: 0;
+         color: #fff;
+     }
+     #fh5co-home{
+         height:750px;
+     }
+ }
+
+
  #fh5co-header.navbar-fixed-top .index-title{
      display: block;
-     color: #52d3aa;
  }
 
  .title-div{
@@ -24,18 +37,70 @@
      height:145px;
  }
 
-#navbar{
+#navbar,#footer-navbar{
    text-align: center;
 
 }
 .img-responsive{
-    width:359px;
+    width:100%;
     height:252px;
 }
+
+
 
 /*转化为块级元素*/
 #navbar ul{
     display: inline-block;
+}
+#footer-navbar ul{
+    display: inline-block;
+}
+
+ #footer-navbar li a span:before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #00b9e4;
+     visibility: hidden;
+     -webkit-transform: scaleX(0);
+     -moz-transform: scaleX(0);
+     -ms-transform: scaleX(0);
+     -o-transform: scaleX(0);
+     transform: scaleX(0);
+     -webkit-transition: all 0.3s ease-in-out 0s;
+     -moz-transition: all 0.3s ease-in-out 0s;
+     -ms-transition: all 0.3s ease-in-out 0s;
+     -o-transition: all 0.3s ease-in-out 0s;
+     transition: all 0.3s ease-in-out 0s;
+ }
+ #footer-navbar li a:hover {
+     color: #00b9e4;
+ }
+ #footer-navbar li a:hover span:before {
+     visibility: visible;
+     -webkit-transform: scaleX(1);
+     -moz-transform: scaleX(1);
+     -ms-transform: scaleX(1);
+     -o-transform: scaleX(1);
+     transform: scaleX(1);
+ }
+ #footer-navbar li.active a {
+     background: transparent;
+     background: none;
+     color: #00b9e4;
+ }
+ #footer-navbar li.active a span:before {
+     visibility: visible;
+     -webkit-transform: scaleX(1);
+     transform: scaleX(1);
+ }
+
+
+#footer-navbar ul li{
+    float: left;
 }
  .sr-only-element{overflow:hidden;white-space:nowrap;padding:0}
  .sr-only-element{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(100%);clip-path:inset(100%);height:1px;position:absolute;width:1px}
@@ -62,10 +127,11 @@
      flex: 1;
  }
 .content{
-    margin-top:60px;height: 4000px;z-index:1;
+    margin-top:111px;height: 4000px;z-index:1;
     width:100%;
 }
- .content_fix{position: fixed;top:50px;margin-top:0;}
+ .content_fix{position: fixed;
+     top:0;margin-top:111px;}
  .content_shadow{height: 1000px;}
  #bg-img{
      position: absolute;
@@ -84,7 +150,7 @@
      transform: none;
      max-width: none;
      max-height: none;
-     background-image: linear-gradient(#771212,#620f0f);
+     background-image: linear-gradient(#0d5e9b,#004f8b);
  }
 
 
@@ -191,8 +257,8 @@
      top: 40px;
      left: 50%;
      margin-left: -21px;
-     background-color: #FF9000;
-     z-index: 100;
+     background-color: #004376;
+     z-index: 20;
      display: table;
      -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
@@ -209,6 +275,14 @@
          margin-left: -10px !important;
      }
  }
+ @media screen and (min-width: 1600px){
+     .self_container {
+         width: 1400px;
+     }
+ }
+
+
+
  .timeline > li > .timeline-badge i {
      display: table-cell;
      vertical-align: middle;
@@ -295,3 +369,150 @@
          right: auto;
      }
  }
+
+ #fh5co-testimonials{
+     background: #f9f6ef;
+ }
+ #fh5co-work .row-bottom-padded-sm a:hover .desc {
+     opacity: 1;
+ }
+
+ #fh5co-work .row-bottom-padded-sm a:hover {
+     webkit-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+     -moz-box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+     box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.13);
+ }
+
+.fh5co-project-item .desc {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(255, 255, 255, 0.8);
+     opacity: 0;
+     padding: 30px;
+     -webkit-transition: 0.3s;
+     -o-transition: 0.3s;
+     transition: 0.3s;
+ }
+ .fh5co-project-item .desc p {
+     color: #8f989f;
+ }
+
+ .back-img img{
+     width:100%;
+     height: 573px;
+ }
+
+
+ #fh5co-blog {
+     padding: 7em 0;
+     position: relative;
+     clear: both;
+     background: #f7f7f7;
+ }
+ @media screen and (max-width: 768px) {
+     #fh5co-blog {
+         padding: 3em 0;
+     }
+ }
+ #fh5co-intro .fh5co-entry {
+     margin-bottom: 30px;
+     float: left;
+ }
+ #fh5co-intro .fh5co-entry figure {
+     margin-bottom: 0px;
+     -webkit-transition: 0.5s;
+     -o-transition: 0.5s;
+     transition: 0.5s;
+     height:252px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ #fh5co-intro .fh5co-entry figure img {
+     max-width: 100%;
+ }
+ #fh5co-intro .fh5co-entry .fh5co-date {
+     display: block;
+     margin-bottom: 15px;
+     font-size: 12px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     font-weight: bold;
+     color: #b3b3b3;
+ }
+ #fh5co-intro .fh5co-entry .fh5co-copy {
+     padding: 30px;
+     background: #fff;
+ }
+ #fh5co-intro .fh5co-entry h3 {
+     margin-bottom: 10px;
+     line-height: 1.5;
+     color: #000;
+ }
+
+ #fh5co-intro .fh5co-entry:hover h3{
+     color: #00b9e4;
+ }
+
+ #fh5co-intro .fh5co-entry p {
+     color: #999999;
+ }
+ #fh5co-intro .fh5co-entry p:last-child {
+     margin-bottom: 0;
+ }
+ #fh5co-intro .fh5co-entry:hover figure {
+     opacity: .8;
+ }
+ #fh5co-intro .fh5co-entry:hover, #fh5co-intro .fh5co-entry:active, #fh5co-intro .fh5co-entry:focus {
+     text-decoration: none !important;
+ }
+
+
+ #footer-navbar ul li a{
+     color: #000;
+     font-size: 1.25em;
+ }
+ 
+ #footer-navbar ul li :hover{
+     color: #00b9e4;
+     background: none;
+ }
+ 
+ #footer{
+     background: #004376;
+ }
+ #footer-ul h4{
+     color: #fff;
+ }
+ .footer-ul{
+     list-style: none;
+ }
+
+ .footer-ul li a{
+     color: #fff;
+     font-size: 1rem;
+text-decoration: none;
+ }
+
+ .footer-p p{
+     font-size: 1.5rem;
+     margin-bottom: 0.75em;
+ }
+
+ .fh5co-entry{
+     box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+
+ }
+ .fh5co-entry:hover{
+     box-shadow: 0 0 10px rgba(0,0,0,.2), 0 7px 10px rgba(0,0,0,.2);
+ }
+ .fh5co-entry:hover >figure img{
+     -webkit-transform: scale(1.015);
+     -ms-transform: scale(1.015);
+     transform: scale(1.015);
+     zoom: 1.02;
+ }
+
+

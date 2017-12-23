@@ -12,4 +12,9 @@ public class MainController {
     public String index(){
         return "index";
     }
+
+    @GetMapping("/news")
+    public String news(){
+        return "news";
+    }
 }
