@@ -22,4 +22,9 @@ public class MainController {
     public String content(){
         return "content";
     }
+
+    @GetMapping("/researcher")
+    public String researcher(){
+        return "researcher";
+    }
 }
