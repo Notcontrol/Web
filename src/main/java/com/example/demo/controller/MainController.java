@@ -17,4 +17,9 @@ public class MainController {
     public String news(){
         return "news";
     }
+
+    @GetMapping("/content")
+    public String content(){
+        return "content";
+    }
 }
